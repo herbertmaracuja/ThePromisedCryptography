@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	meta charset="UTF-8">
+	<title>TPN - Carta do Minerva</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="jogo-bg">
+
+	<!-- TEXTO DO PERSONAGEM -->
+	<div id="fala" class="texto"></div>
+
+	<!-- CARTA -->
+	<img id="carta" src="carta.png" alt="Carta" class="carta">
+
+	<!-- BOTÃO DO CANTO -->
+	<img 
+	  src="carta_btn.png"
+	  class="btn-carta"
+	  onclick="abrirCarta()"
+	  title="Ver carta"
+	>
+
+	<script>
+	// TEXTO DO PERSONAGEM
+	const fala = `
+	Isso foi deixado pelo Minerva...
+	Essa carta está toda codificada.
+	
+	Se eu conseguir decifrar,
+	posso finalmente fugir daqui.
+	`;
+
+	let i = 0;
+	const div = document.getElementById("fala");
+
+	// --- Tipo digitação ---
+	function escrever(){
+		if (i < fala.length){
+			div.innerHTML += fala.charAt(i);
+			i++;
+			setTimeout(escrever,40);
+		} 
+		else{
+			mostrarCarta();
+		}
+	}
+
+	escrever();
+
+	// --- MOSTRAR CARTA COM ANIMAÇÃO ---
+	function mostrarCarta(){
+		document.getElementById("carta").classList.add("mostrar");
+	}
+
+	// --- BOTÃO DO CANTO ---
+	function abrirCarta(){
+		document.getElementById("carta").classList.toggle("mostrar");
+	}
+	</script>
+
+</body>
+</html>
