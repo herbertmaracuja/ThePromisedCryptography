@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parte 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p1">
+
+  <!-- ÍCONE DA CARTA -->
+  <img 
+    id="iconeCarta"
+    src="iconecarta.jpeg"
+    class="icone-carta"
+    onclick="abrirCarta()"
+    alt="Ícone da Carta"
+  >
+
+  <!-- CARTA -->
+  <img 
+    id="cartaAberta"
+    src="Carta.png"
+    class="carta"
+    alt="Carta Aberta"
+  >
+
+  <!-- PERSONAGEM -->
+  <img 
+    id="personagem"
+    src="normanolhando.png"
+    class="personagem"
+    alt="Personagem"
+  >
+
+  <!-- ===== PUZZLE DAS PORTAS ===== -->
+  <div class="puzzle-container">
+
+    <h2>Escolha a porta para a próxima fase</h2>
+
+    <div class="portas">
+
+      <!-- PORTA CORRETA (1ª) -->
+      <img src="forestdoor.png" class="porta" onclick="window.location.href='p2.html'">
+
+      <!-- PORTAS ERRADAS -->
+      <img src="forestdoor.png" class="porta" onclick="window.location.href='perdeu.html'">
+      <img src="forestdoor.png" class="porta" onclick="window.location.href='perdeu.html'">
+      <img src="forestdoor.png" class="porta" onclick="window.location.href='perdeu.html'">
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

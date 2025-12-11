@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Continuação</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +15,7 @@
     src="iconecarta.jpeg"
     class="icone-carta"
     onclick="abrirCarta()"
+    alt="Ícone da Carta"
   >
 
   <!-- CARTA -->
@@ -21,6 +23,7 @@
     id="cartaAberta"
     src="Carta.png"
     class="carta"
+    alt="Carta Aberta"
   >
 
   <!-- PERSONAGEM -->
@@ -28,29 +31,29 @@
     id="personagem"
     src="normanolhando.png"
     class="personagem"
+    alt="Personagem"
   >
 
-  <!-- ========== PUZZLE ========== -->
-  <div id="puzzle" class="puzzle-container">
+  <!-- ===== PUZZLE DAS PORTAS ===== -->
+  <div class="puzzle-container">
 
-    <h2>Qual porta guarda a saída?</h2>
+    <h2>Escolha. aporta para a a próxima fase</h2>
 
     <div class="portas">
 
       <!-- PORTAS ERRADAS -->
-      <img src="GreenDoor.webp" class="porta" onclick="window.location.href='perdeu.html'">
-      <img src="GreenDoor.webp" class="porta" onclick="window.location.href='perdeu.html'">
+      <img src="Door.jpeg" class="porta" onclick="window.location.href='perdeu.html'">
+      <img src="Door.jpeg" class="porta" onclick="window.location.href='perdeu.html'">
+      <img src="Door.jpeg" class="porta" onclick="window.location.href='perdeu.html'">
 
-      <!-- PORTA CORRETA -->
-      <img src="GreenDoor.webp" class="porta correta" onclick="window.location.href='p1.html'">
+      <!-- ✅ PORTA CORRETA (4ª) -->
+      <img src="Door.jpeg" class="porta" onclick="window.location.href='p1.html'">
 
-      <!-- PORTA ERRADA -->
-      <img src="GreenDoor.webp" class="porta" onclick="window.location.href='perdeu.html'">
-      
     </div>
 
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>

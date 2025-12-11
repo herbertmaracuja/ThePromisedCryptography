@@ -10,32 +10,20 @@
 <!-- TELA MENU -->
 <div id="menu" class="tela ativa menu-bg">
 
-  <img src="titulo.png" class="titulo" alt="Título">
+  <img src="titulo.png" class="titulo" alt="Título do jogo">
 
   <div class="botoes">
-    <img src="Jogar.png" class="btn-img" onclick="trocarTela('jogo'); iniciarHistoria();">
+    <img
+      src="Jogar.png"
+      class="btn-img"
+      alt="Botão Jogar"
+      onclick="trocarTela('jogo'); iniciarHistoria();"
+    >
   </div>
 
 </div>
 
-
-<!-- TELA TUTORIAL -->
-<div id="tutorial" class="tela tutorial-bg">
-  
-  <button class="voltar" onclick="trocarTela('menu')">← Voltar</button>
-
-  <div class="texto">
-    Aqui você vai aprender sobre a
-    <br><br>
-     <strong>Cifra de César</strong>
-    <br><br>
-    Uma técnica de criptografia por deslocamento de letras.
-  </div>
-
-</div>
-
-
-<!-- TELA JOGO -->
+<!-- TELA DO JOGO -->
 <div id="jogo" class="tela jogo-bg">
 
   <div id="texto" class="texto"></div>
@@ -44,13 +32,12 @@
     id="continuar"
     src="continuarimagem.png"
     class="btn-img"
+    alt="Botão Continuar"
     onclick="proximaCena()"
   >
-
 </div>
 
-<div id="fade"></div>
-
 <script src="script.js"></script>
+
 </body>
 </html>
