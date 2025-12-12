@@ -2,8 +2,6 @@
 
 > Um puzzle narrativo de lógica e criptografia inspirado no universo de *The Promised Neverland*. Ajude Norman a decifrar a verdade e escapar de Gracefield.
 
-![Status do Projeto](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
-![Tech](https://img.shields.io/badge/Tech-HTML%20|%20CSS%20|%20JS-blue)
 
 ## 📖 Sobre o Jogo
 
