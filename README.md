@@ -3,7 +3,7 @@
 > Um puzzle narrativo de lógica e criptografia inspirado no universo de *The Promised Neverland*. Ajude Norman a decifrar a verdade e escapar de Gracefield.
 
 
-## 📖 Sobre o Jogo
+## Sobre o Jogo
 
 **The Promised Cryptography** é uma experiência web interativa onde o jogador assume o papel de **Norman**. Em um dia aparentemente comum no orfanato Gracefield, você encontra uma carta misteriosa escondida em um livro da biblioteca de Minerva.
 
